@@ -1,5 +1,5 @@
 body {
-    background-color: #FCEDDA;
+    background-color: #c3c6cc;
 }
 
 .main {
@@ -7,7 +7,7 @@ body {
 }
 
 .nameHeader {
-    color: #EE4E34;
+    color: #15397F;
     font-style: bold;
     font-size: 60px;
 }
@@ -22,7 +22,7 @@ body {
     justify-content: space-evenly;
     gap: 10px;
     grid-template-columns: auto auto auto;
-    background-color: #cc6c5d;
+    background-color: #91ade5;
     padding: 10px;
 }
 
