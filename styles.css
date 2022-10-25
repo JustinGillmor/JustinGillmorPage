@@ -1,5 +1,5 @@
 body {
-    background-color: #15397F;
+    background-color: #FCEDDA;
 }
 
 .main {
@@ -7,25 +7,32 @@ body {
 }
 
 .nameHeader {
-    color: #FFDA00;
+    color: #EE4E34;
     font-style: bold;
     font-size: 60px;
 }
 
+#toledo-logo {
+    height: 100px;
+    width: 100px;
+}
+
 .grid-container {
     display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
+    justify-content: space-evenly;
+    gap: 10px;
     grid-template-columns: auto auto auto;
-    background-color: #6b8fd6;
+    background-color: #cc6c5d;
     padding: 10px;
 }
 
 .grid-item {
+    height: 200px;
+    width: 250px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
+    color:rgba(0, 0, 0, 0.8);
     font-size: 25px;
-    padding: 10px;
     text-align: center;
 }
 
