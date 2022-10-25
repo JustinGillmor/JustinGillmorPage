@@ -1,0 +1,18 @@
+body {
+    background-color: #15397F;
+}
+
+.main {
+    text-align: center;
+}
+
+.nameHeader {
+    color: #FFDA00;
+    font-style: bold;
+    font-size: 60px;
+}
+
+#para1 {
+    color: #FFFFFF;
+    font-size: 16px;
+}
