@@ -3,11 +3,74 @@
     <script>
         function openWorkExperience() {
             var coll = document.getElementById("collapse-1")
+            var exit = document.getElementById("exit-1")
             if (coll.style.display === "block") {
                 coll.style.display = "none";
+                exit.style.display = "none";
             }
             else {
                 coll.style.display = "block";
+                exit.style.display = "block";
+            }
+        }
+        function openSchoolExperience() {
+            var coll = document.getElementById("collapse-2")
+            var exit = document.getElementById("exit-2")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+                exit.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+                exit.style.display = "block";
+            }
+        }
+        function openContactInfo() {
+            var coll = document.getElementById("collapse-3")
+            var exit = document.getElementById("exit-3")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+                exit.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+                exit.style.display = "block";
+            }
+        }
+        function openBox4() {
+            var coll = document.getElementById("collapse-4")
+            var exit = document.getElementById("exit-4")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+                exit.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+                exit.style.display = "block";
+            }
+        }
+        function openBox5() {
+            var coll = document.getElementById("collapse-5")
+            var exit = document.getElementById("exit-5")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+                exit.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+                exit.style.display = "block";
+            }
+        }
+        function openBox6() {
+            var coll = document.getElementById("collapse-6")
+            var exit = document.getElementById("exit-6")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+                exit.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+                exit.style.display = "block";
             }
         }
     </script>
@@ -27,13 +90,30 @@
             <div id="para1" style="color:black"> Welcome! This is portfolio is a work in progress.</div>
             <div class="grid-container">
                 <div class="grid-item" onclick="openWorkExperience()" style="cursor: pointer;">Work Experience</div>
-                <div class="grid-item">School Experience</div>
-                <div class="grid-item">Contact Information</div>
-                <div class="grid-item">Other Content</div>
-                <div class="grid-item">Other Content</div>
-                <div class="grid-item">Other Content</div>
+                <div class="grid-item" onclick="openSchoolExperience()" style="cursor: pointer;">School Experience</div>
+                <div class="grid-item" onclick="openContactInfo()" style="cursor: pointer;">Contact Information</div>
+                <div class="grid-item" onclick="openBox4()" style="cursor: pointer;">Other Content</div>
+                <div class="grid-item" onclick="openBox5()" style="cursor: pointer;">Other Content</div>
+                <div class="grid-item" onclick="openBox6()" style="cursor: pointer;">Other Content</div>
             </div>
-            <div hidden class="work-experience-coll" id="collapse-1"> This is the hidden collapsible</div>
+            <div hidden class="collapsible" id="collapse-1"> This is the hidden collapsible1
+                <div hidden class="exit-button" id="exit-1" onclick="openWorkExperience()" style="cursor: pointer;">X</div>
+            </div>
+            <div hidden class="collapsible" id="collapse-2"> This is the hidden collapsible2
+                <div hidden class="exit-button" id="exit-2" onclick="openSchoolExperience()" style="cursor: pointer;">X</div>
+            </div>
+            <div hidden class="collapsible" id="collapse-3"> This is the hidden collapsible3
+                <div hidden class="exit-button" id="exit-3" onclick="openContactInfo()" style="cursor: pointer;">X</div>
+            </div>
+            <div hidden class="collapsible" id="collapse-4"> This is the hidden collapsible4
+                <div hidden class="exit-button" id="exit-4" onclick="openBox4()" style="cursor: pointer;">X</div>
+            </div>
+            <div hidden class="collapsible" id="collapse-5"> This is the hidden collapsible5
+                <div hidden class="exit-button" id="exit-5" onclick="openBox5()" style="cursor: pointer;">X</div>
+            </div>
+            <div hidden class="collapsible" id="collapse-6"> This is the hidden collapsible6
+                <div hidden class="exit-button" id="exit-6" onclick="openBox6()" style="cursor: pointer;">X</div>
+            </div>
         <div>
     </body>
 
