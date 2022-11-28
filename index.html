@@ -1,5 +1,17 @@
 <html lang="en">
 
+    <script>
+        function openWorkExperience() {
+            var coll = document.getElementById("collapse-1")
+            if (coll.style.display === "block") {
+                coll.style.display = "none";
+            }
+            else {
+                coll.style.display = "block";
+            }
+        }
+    </script>
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +26,14 @@
             <div class="nameHeader">Justin Gillmor</div>
             <div id="para1" style="color:black"> Welcome! This is portfolio is a work in progress.</div>
             <div class="grid-container">
-                <div class="grid-item">Work Experience</div>
+                <div class="grid-item" onclick="openWorkExperience()" style="cursor: pointer;">Work Experience</div>
                 <div class="grid-item">School Experience</div>
                 <div class="grid-item">Contact Information</div>
                 <div class="grid-item">Other Content</div>
                 <div class="grid-item">Other Content</div>
                 <div class="grid-item">Other Content</div>
             </div>
+            <div hidden class="work-experience-coll" id="collapse-1"> This is the hidden collapsible</div>
         <div>
     </body>
 
