@@ -52,12 +52,11 @@ body {
 
 #para1 {
     color: #FFFFFF;
-    fontsize: 16px;
 }
 
-#collapse-1 {
+.collapsible {
     position: absolute;
-    top: 125%;
+    top: 50%;
     left: 55%;
     width: 1200px;
     height: 500px;
@@ -69,5 +68,12 @@ body {
     background-color: #ffffff;
     border: 1px solid #000000;
     color:#15397F;
-    transition: 
+}
+
+.exit-button {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    color: #000000;
+    border: 2px solid #000000
 }
