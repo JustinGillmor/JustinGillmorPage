@@ -1,6 +1,7 @@
 <html lang="en">
 
     <script>
+        <!-- Add case statement to remove redundant code -->
         function openWorkExperience() 
         {
             let box = document.getElementById("collapse-1"),
@@ -41,22 +42,35 @@
         }
         function openSchoolExperience() 
         {
-            let box = document.getElementById("collapse-2");
+            let box = document.getElementById("collapse-2"),
+                exit = document.getElementById("exit-2");
             if (box.classList.contains('hidden')) 
             {
                 box.classList.remove('hidden');
+                exit.classList.remove('hidden');
                 setTimeout(function () 
                 {
                     box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
                 }, 20);
             } 
             else 
             {
+                exit.classList.add('visuallyhidden')
                 box.classList.add('visuallyhidden');    
                 box.addEventListener('transitionend', 
                 function(e) 
                 {
                     box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
                 }, {
                         capture: false,
                         once: true,
@@ -66,22 +80,35 @@
         }
         function openContactInfo() 
         {
-            let box = document.getElementById("collapse-3");
+            let box = document.getElementById("collapse-3"),
+                exit = document.getElementById("exit-3");
             if (box.classList.contains('hidden')) 
             {
                 box.classList.remove('hidden');
+                exit.classList.remove('hidden');
                 setTimeout(function () 
                 {
                     box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
                 }, 20);
             } 
             else 
             {
+                exit.classList.add('visuallyhidden')
                 box.classList.add('visuallyhidden');    
                 box.addEventListener('transitionend', 
                 function(e) 
                 {
                     box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
                 }, {
                         capture: false,
                         once: true,
@@ -91,22 +118,35 @@
         }
         function openBox4() 
         {
-            let box = document.getElementById("collapse-4");
+            let box = document.getElementById("collapse-4"),
+                exit = document.getElementById("exit-4");
             if (box.classList.contains('hidden')) 
             {
                 box.classList.remove('hidden');
+                exit.classList.remove('hidden');
                 setTimeout(function () 
                 {
                     box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
                 }, 20);
             } 
             else 
             {
+                exit.classList.add('visuallyhidden')
                 box.classList.add('visuallyhidden');    
                 box.addEventListener('transitionend', 
                 function(e) 
                 {
                     box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
                 }, {
                         capture: false,
                         once: true,
@@ -116,17 +156,21 @@
         }
         function openBox5()
         {
-            let box = document.getElementById("collapse-5");
+            let box = document.getElementById("collapse-5"),
+                exit = document.getElementById("exit-5");
             if (box.classList.contains('hidden')) 
             {
                 box.classList.remove('hidden');
+                exit.classList.remove('hidden');
                 setTimeout(function () 
                 {
                     box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
                 }, 20);
             } 
             else 
             {
+                exit.classList.add('visuallyhidden')
                 box.classList.add('visuallyhidden');    
                 box.addEventListener('transitionend', 
                 function(e) 
@@ -137,26 +181,48 @@
                         once: true,
                         passive: false
                     });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
             }
         }
         function openBox6()
         {
-            let box = document.getElementById("collapse-6");
+            let box = document.getElementById("collapse-6"),
+                exit = document.getElementById("exit-6");
             if (box.classList.contains('hidden')) 
             {
                 box.classList.remove('hidden');
+                exit.classList.remove('hidden');
                 setTimeout(function () 
                 {
                     box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
                 }, 20);
             } 
             else 
             {
+                exit.classList.add('visuallyhidden')
                 box.classList.add('visuallyhidden');    
                 box.addEventListener('transitionend', 
                 function(e) 
                 {
                     box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
                 }, {
                         capture: false,
                         once: true,
@@ -187,8 +253,9 @@
                 <div class="grid-item" onclick="openBox5()" style="cursor: pointer;">Other Content</div>
                 <div class="grid-item" onclick="openBox6()" style="cursor: pointer;">Other Content</div>
             </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-1"> This is the hidden collapsible1</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-1"> This is the hidden collapsible1
                 <div class="exit-button visuallyhidden hidden" id="exit-1" onclick="openWorkExperience()" style="cursor: pointer;">X</div>
+            </div>
             <div class="collapsible visuallyhidden hidden" id="collapse-2"> This is the hidden collapsible2
                 <div class="exit-button visuallyhidden hidden" id="exit-2" onclick="openSchoolExperience()" style="cursor: pointer;">X</div>
             </div>

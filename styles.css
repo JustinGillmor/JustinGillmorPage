@@ -68,7 +68,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #000000;
     color:#15397F;
-    transition: all 1s linear;
+    transition: all .75s ease-in-out;
     display: block;
 }
 
@@ -86,6 +86,6 @@ body {
     right: 2%;
     color: #000000;
     border: 2px solid #000000;
-    transition: all 1s linear;
+    transition: all .75s linear;
     display: block;
 }
