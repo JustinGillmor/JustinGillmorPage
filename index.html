@@ -1,76 +1,167 @@
 <html lang="en">
 
     <script>
-        function openWorkExperience() {
-            var coll = document.getElementById("collapse-1")
-            var exit = document.getElementById("exit-1")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
-            }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
-            }
-        }
-        function openSchoolExperience() {
-            var coll = document.getElementById("collapse-2")
-            var exit = document.getElementById("exit-2")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
-            }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
-            }
-        }
-        function openContactInfo() {
-            var coll = document.getElementById("collapse-3")
-            var exit = document.getElementById("exit-3")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
-            }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
-            }
-        }
-        function openBox4() {
-            var coll = document.getElementById("collapse-4")
-            var exit = document.getElementById("exit-4")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
-            }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
+        function openWorkExperience() 
+        {
+            let box = document.getElementById("collapse-1"),
+                exit = document.getElementById("exit-1");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                exit.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                    exit.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                exit.classList.add('visuallyhidden')
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+                exit.addEventListener('transitionend', 
+                function(e) 
+                {
+                    exit.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
             }
         }
-        function openBox5() {
-            var coll = document.getElementById("collapse-5")
-            var exit = document.getElementById("exit-5")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
-            }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
+        function openSchoolExperience() 
+        {
+            let box = document.getElementById("collapse-2");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
             }
         }
-        function openBox6() {
-            var coll = document.getElementById("collapse-6")
-            var exit = document.getElementById("exit-6")
-            if (coll.style.display === "block") {
-                coll.style.display = "none";
-                exit.style.display = "none";
+        function openContactInfo() 
+        {
+            let box = document.getElementById("collapse-3");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
             }
-            else {
-                coll.style.display = "block";
-                exit.style.display = "block";
+        }
+        function openBox4() 
+        {
+            let box = document.getElementById("collapse-4");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+            }
+        }
+        function openBox5()
+        {
+            let box = document.getElementById("collapse-5");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
+            }
+        }
+        function openBox6()
+        {
+            let box = document.getElementById("collapse-6");
+            if (box.classList.contains('hidden')) 
+            {
+                box.classList.remove('hidden');
+                setTimeout(function () 
+                {
+                    box.classList.remove('visuallyhidden');
+                }, 20);
+            } 
+            else 
+            {
+                box.classList.add('visuallyhidden');    
+                box.addEventListener('transitionend', 
+                function(e) 
+                {
+                    box.classList.add('hidden');
+                }, {
+                        capture: false,
+                        once: true,
+                        passive: false
+                    });
             }
         }
     </script>
@@ -96,23 +187,22 @@
                 <div class="grid-item" onclick="openBox5()" style="cursor: pointer;">Other Content</div>
                 <div class="grid-item" onclick="openBox6()" style="cursor: pointer;">Other Content</div>
             </div>
-            <div hidden class="collapsible" id="collapse-1"> This is the hidden collapsible1
-                <div hidden class="exit-button" id="exit-1" onclick="openWorkExperience()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-1"> This is the hidden collapsible1</div>
+                <div class="exit-button visuallyhidden hidden" id="exit-1" onclick="openWorkExperience()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-2"> This is the hidden collapsible2
+                <div class="exit-button visuallyhidden hidden" id="exit-2" onclick="openSchoolExperience()" style="cursor: pointer;">X</div>
             </div>
-            <div hidden class="collapsible" id="collapse-2"> This is the hidden collapsible2
-                <div hidden class="exit-button" id="exit-2" onclick="openSchoolExperience()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-3"> This is the hidden collapsible3
+                <div class="exit-button visuallyhidden hidden" id="exit-3" onclick="openContactInfo()" style="cursor: pointer;">X</div>
             </div>
-            <div hidden class="collapsible" id="collapse-3"> This is the hidden collapsible3
-                <div hidden class="exit-button" id="exit-3" onclick="openContactInfo()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-4"> This is the hidden collapsible4
+                <div class="exit-button visuallyhidden hidden" id="exit-4" onclick="openBox4()" style="cursor: pointer;">X</div>
             </div>
-            <div hidden class="collapsible" id="collapse-4"> This is the hidden collapsible4
-                <div hidden class="exit-button" id="exit-4" onclick="openBox4()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-5"> This is the hidden collapsible5
+                <div class="exit-button visuallyhidden hidden" id="exit-5" onclick="openBox5()" style="cursor: pointer;">X</div>
             </div>
-            <div hidden class="collapsible" id="collapse-5"> This is the hidden collapsible5
-                <div hidden class="exit-button" id="exit-5" onclick="openBox5()" style="cursor: pointer;">X</div>
-            </div>
-            <div hidden class="collapsible" id="collapse-6"> This is the hidden collapsible6
-                <div hidden class="exit-button" id="exit-6" onclick="openBox6()" style="cursor: pointer;">X</div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-6"> This is the hidden collapsible6
+                <div class="exit-button visuallyhidden hidden" id="exit-6" onclick="openBox6()" style="cursor: pointer;">X</div>
             </div>
         <div>
     </body>

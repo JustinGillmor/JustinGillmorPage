@@ -68,6 +68,16 @@ body {
     background-color: #ffffff;
     border: 1px solid #000000;
     color:#15397F;
+    transition: all 1s linear;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
 }
 
 .exit-button {
@@ -75,5 +85,7 @@ body {
     top: 5%;
     right: 2%;
     color: #000000;
-    border: 2px solid #000000
+    border: 2px solid #000000;
+    transition: all 1s linear;
+    display: block;
 }
