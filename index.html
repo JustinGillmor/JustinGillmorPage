@@ -1,7 +1,48 @@
 <html lang="en">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JustinGillmorPortfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <img id="toledo-logo" src="toledo-rockets-logo.png" style="float:left; margin:10px">
+            <div class="nameHeader">Justin Gillmor</div>
+            <div id="para1" style="color:black"> Welcome! This is portfolio is a work in progress.</div>
+            <div class="grid-container">
+                <div class="grid-item" id = grid-item-1 onclick="openGridItem(this.id)" style="cursor: pointer;">Experience</div>
+                <div class="grid-item" id = grid-item-2 onclick="openGridItem(this.id)" style="cursor: pointer;">Education</div>
+                <div class="grid-item" id = grid-item-3 onclick="openGridItem(this.id)" style="cursor: pointer;">Contact</div>
+                <div class="grid-item" id = grid-item-4 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
+                <div class="grid-item" id = grid-item-5 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
+                <div class="grid-item" id = grid-item-6 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-1"> This is the hidden collapsible1
+                <div class="exit-button visuallyhidden hidden" id="exit-1" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-2"> This is the hidden collapsible2
+                <div class="exit-button visuallyhidden hidden" id="exit-2" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-3"> This is the hidden collapsible3
+                <div class="exit-button visuallyhidden hidden" id="exit-3" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-4"> This is the hidden collapsible4
+                <div class="exit-button visuallyhidden hidden" id="exit-4" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-5"> This is the hidden collapsible5
+                <div class="exit-button visuallyhidden hidden" id="exit-5" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+            <div class="collapsible visuallyhidden hidden" id="collapse-6"> This is the hidden collapsible6
+                <div class="exit-button visuallyhidden hidden" id="exit-6" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
+            </div>
+        <div>
+    </body>
+
     <script>
-        <!-- Add case statement to remove redundant code -->
         function openGridItem(element_id)
         {
             switch(element_id)
@@ -66,47 +107,4 @@
             }
         }
     </script>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JustinGillmorPortfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body>
-        <div class="main">
-            <img id="toledo-logo" src="toledo-rockets-logo.png" style="float:left; margin:10px">
-            <div class="nameHeader">Justin Gillmor</div>
-            <div id="para1" style="color:black"> Welcome! This is portfolio is a work in progress.</div>
-            <div class="grid-container">
-                <div class="grid-item" id = grid-item-1 onclick="openGridItem(this.id)" style="cursor: pointer;">Work Experience</div>
-                <div class="grid-item" id = grid-item-2 onclick="openGridItem(this.id)" style="cursor: pointer;">School Experience</div>
-                <div class="grid-item" id = grid-item-3 onclick="openGridItem(this.id)" style="cursor: pointer;">Contact Information</div>
-                <div class="grid-item" id = grid-item-4 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
-                <div class="grid-item" id = grid-item-5 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
-                <div class="grid-item" id = grid-item-6 onclick="openGridItem(this.id)" style="cursor: pointer;">Other Content</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-1"> This is the hidden collapsible1
-                <div class="exit-button visuallyhidden hidden" id="exit-1" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-2"> This is the hidden collapsible2
-                <div class="exit-button visuallyhidden hidden" id="exit-2" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-3"> This is the hidden collapsible3
-                <div class="exit-button visuallyhidden hidden" id="exit-3" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-4"> This is the hidden collapsible4
-                <div class="exit-button visuallyhidden hidden" id="exit-4" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-5"> This is the hidden collapsible5
-                <div class="exit-button visuallyhidden hidden" id="exit-5" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-            <div class="collapsible visuallyhidden hidden" id="collapse-6"> This is the hidden collapsible6
-                <div class="exit-button visuallyhidden hidden" id="exit-6" onclick="openGridItem(this.id)" style="cursor: pointer;">X</div>
-            </div>
-        <div>
-    </body>
-
 </html>

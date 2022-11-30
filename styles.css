@@ -1,5 +1,10 @@
 body {
-    background-color: #c3c6cc;
+    position: relative;
+    background-image: 
+        linear-gradient(black, black),
+        url(stock-green-circuit.jpg);
+    background-blend-mode: saturation;
+    background-size: 100% 100%;
 }
 
 .main {
@@ -25,7 +30,7 @@ body {
     align-content: center;
     gap: 50px;
     grid-template-columns: auto auto auto;
-    background-color: #c3c6cc;
+    background-color: rgb(0, 0, 0, 0.0);
     padding: 10px;
 }
 
@@ -46,7 +51,7 @@ body {
 
 .grid-item:hover {
     color: #FFFFFF;
-    box-shadow: inset 0 0 0 250px #15397F;
+    box-shadow: inset 0 0 0 250px rgba(0,0,0,0.5);
     transform: scale(1.2);
 }
 
@@ -88,4 +93,10 @@ body {
     border: 2px solid #000000;
     transition: all .75s linear;
     display: block;
+}
+
+#grid-item-1 {
+    position: relative;
+    background-image: url(experience4.jpg);
+    background-size: cover;
 }
